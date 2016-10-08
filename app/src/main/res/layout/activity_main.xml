@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/login"
+    tools:context="com.mlabs.bbm.firstandroidapp_morningclass.MainActivity"
+    android:id="@+id/H">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Email"
+        android:hint="Enter Username/Email"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textColorHint="#fff"
+        android:inputType="text|textEmailAddress"
+        android:layout_above="@+id/Pw"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/Pw"
+        android:hint="Enter Password"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textColorHint="#fff"
+        android:layout_above="@+id/show"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogIn"
+        android:id="@+id/login"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        android:background="#1b5975"
+        android:typeface="normal"
+        android:textColorHint="#f1989696"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/btnReg"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        android:background="#08201e"
+        android:contextClickable="true"
+        android:typeface="sans"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Show"
+        android:id="@+id/show"
+        android:textColor="#ffff"
+        android:textSize="15dp"
+        android:layout_marginBottom="81dp"
+        android:layout_above="@+id/login"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#414e57"
+        android:clickable="false"
+        android:textStyle="italic"
+        android:typeface="normal"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false" />
+</RelativeLayout>
